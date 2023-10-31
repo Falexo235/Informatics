@@ -7,7 +7,7 @@ object ListForm: TListForm
   ClientHeight = 514
   ClientWidth = 678
   OnCreate = FormCreate
-  LCLVersion = '3.0.0.1'
+  LCLVersion = '2.2.6.0'
   object FileMemo: TMemo
     Left = 40
     Height = 122
@@ -57,6 +57,7 @@ object ListForm: TListForm
     Top = -104
     Width = 101
     Caption = 'Кол-во элементов'
+    ParentColor = False
   end
   object FileSaveButton: TButton
     Left = 248
@@ -77,11 +78,11 @@ object ListForm: TListForm
     RowCount = 1
     TabOrder = 6
     ColWidths = (
-      119
-      119
-      119
-      119
       118
+      118
+      118
+      118
+      122
     )
     Cells = (
       5
@@ -124,6 +125,7 @@ object ListForm: TListForm
     Top = 8
     Width = 115
     Caption = 'Столбец сортировки'
+    ParentColor = False
   end
   object Label3: TLabel
     Left = 528
@@ -131,6 +133,7 @@ object ListForm: TListForm
     Top = 8
     Width = 100
     Caption = 'Список субъектов'
+    ParentColor = False
   end
   object Label4: TLabel
     Left = 352
@@ -138,6 +141,7 @@ object ListForm: TListForm
     Top = 8
     Width = 53
     Caption = 'Диапазон'
+    ParentColor = False
   end
   object ListBox2: TListBox
     Left = 352

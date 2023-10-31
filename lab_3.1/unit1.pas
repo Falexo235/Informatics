@@ -1,4 +1,5 @@
 unit unit1;
+
 {$mode objfpc}{$H+}
 
 interface
@@ -36,16 +37,19 @@ type
     procedure FuncValueLabelClick(Sender: TObject);
 
   private
-    {}
-  public
-    {}
-  end;
-var Form1: TForm1;
-    implementation
 
-procedure TForm1.ExitButtonClick(Sender:TObject);
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+procedure TForm1.ExitButtonClick(Sender: TObject);
 begin
-     Close;
+  Close;
 end;
 
 procedure TForm1.ArgEditChange(Sender: TObject);
@@ -58,35 +62,40 @@ begin
 
 end;
 
-    procedure TForm1.CalcButtonClick(Sender: TObject);
-    var x,eps:real;
-      s:real;
-      k:integer;
-      a:real;
-    begin
-      S:=1; a:=1; k:=2;
-      try
-        x:=StrToFloat(ArgEdit.Text);
-      except
-        ShowMessage('Error in argument');
-        Exit;
-      end;
-      try
-        eps:=StrToFloat(EpsEdit.Text);
-      except
-        ShowMessage('Error in eps');
-        Exit;
-      end;
-    s:=1; a:=1; k:=2;
-    while abs(a) > eps do
-          begin
-            a:=-x*a;
-            s:=s+a;
-            k:= k+1;
-          end;
-    FuncValueLabel.Caption:=FloatToStr(s);
-    FunctionLabel.Caption:=IntToStr(k);
-    end;
+procedure TForm1.CalcButtonClick(Sender: TObject);
+var
+  x, eps: real;
+  s: real;
+  k: integer;
+  a: real;
+begin
+  S := 1;
+  a := 1;
+  k := 2;
+  try
+    x := StrToFloat(ArgEdit.Text);
+  except
+    ShowMessage('Error in argument');
+    Exit;
+  end;
+  try
+    eps := StrToFloat(EpsEdit.Text);
+  except
+    ShowMessage('Error in eps');
+    Exit;
+  end;
+  s := 1;
+  a := 1;
+  k := 2;
+  while abs(a) > eps do
+  begin
+    a := -x * a;
+    s := s + a;
+    k := k + 1;
+  end;
+  FuncValueLabel.Caption := FloatToStr(s);
+  FunctionLabel.Caption := IntToStr(k);
+end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
@@ -103,7 +112,6 @@ begin
 
 end;
 
-    initialization
+initialization
       {$I unit1.lrs}
-    end.
-
+end.

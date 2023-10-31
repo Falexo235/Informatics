@@ -7,7 +7,7 @@ object ListForm: TListForm
   ClientHeight = 429
   ClientWidth = 418
   OnCreate = FormCreate
-  LCLVersion = '3.0.0.1'
+  LCLVersion = '2.2.6.0'
   object FileSaveButton: TButton
     Left = 160
     Height = 25
@@ -98,6 +98,7 @@ object ListForm: TListForm
     Top = -104
     Width = 101
     Caption = 'Кол-во элементов'
+    ParentColor = False
   end
   object FileSaveDIalog: TSaveDialog
     DefaultExt = '.txt'
