@@ -1,0 +1,153 @@
+object ListForm: TListForm
+  Left = 308
+  Height = 514
+  Top = 122
+  Width = 678
+  Caption = 'ListForm'
+  ClientHeight = 514
+  ClientWidth = 678
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.1'
+  object FileMemo: TMemo
+    Left = 40
+    Height = 122
+    Top = 368
+    Width = 598
+    TabOrder = 0
+  end
+  object FileOpenButton: TButton
+    Left = 144
+    Height = 25
+    Top = 24
+    Width = 102
+    Caption = 'Открыть списки'
+    OnClick = FileOpenButtonClick
+    TabOrder = 1
+  end
+  object Lin: TButton
+    Left = 40
+    Height = 23
+    Top = 64
+    Width = 100
+    Caption = 'Сортировка'
+    OnClick = LinClick
+    TabOrder = 2
+  end
+  object Upor: TButton
+    Left = 144
+    Height = 23
+    Top = 64
+    Width = 100
+    Caption = 'Субъекты'
+    OnClick = UporClick
+    TabOrder = 3
+  end
+  object Sliy: TButton
+    Left = 248
+    Height = 23
+    Top = 64
+    Width = 98
+    Caption = 'Иностранцы'
+    OnClick = SliyClick
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = -632
+    Height = 15
+    Top = -104
+    Width = 101
+    Caption = 'Кол-во элементов'
+  end
+  object FileSaveButton: TButton
+    Left = 248
+    Height = 25
+    Top = 24
+    Width = 100
+    Caption = 'Диапазон'
+    OnClick = FileSaveButtonClick
+    TabOrder = 5
+  end
+  object StringGrid1: TStringGrid
+    Left = 40
+    Height = 233
+    Top = 128
+    Width = 598
+    AutoFillColumns = True
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 6
+    ColWidths = (
+      119
+      119
+      119
+      119
+      118
+    )
+    Cells = (
+      5
+      0
+      0
+      'Фамилия'
+      1
+      0
+      'Направление'
+      2
+      0
+      'Год рождения'
+      3
+      0
+      'Страна'
+      4
+      0
+      'Место регистрации'
+    )
+  end
+  object ListBox1: TListBox
+    Left = 526
+    Height = 93
+    Top = 24
+    Width = 112
+    ItemHeight = 0
+    TabOrder = 7
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 23
+    Top = 24
+    Width = 100
+    TabOrder = 8
+    Text = '1'
+  end
+  object Label2: TLabel
+    Left = 40
+    Height = 15
+    Top = 8
+    Width = 115
+    Caption = 'Столбец сортировки'
+  end
+  object Label3: TLabel
+    Left = 528
+    Height = 15
+    Top = 8
+    Width = 100
+    Caption = 'Список субъектов'
+  end
+  object Label4: TLabel
+    Left = 352
+    Height = 15
+    Top = 8
+    Width = 53
+    Caption = 'Диапазон'
+  end
+  object ListBox2: TListBox
+    Left = 352
+    Height = 93
+    Top = 24
+    Width = 160
+    ItemHeight = 0
+    TabOrder = 9
+  end
+  object FileOpenDialog: TOpenDialog
+    Left = 312
+  end
+end

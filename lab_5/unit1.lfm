@@ -1,0 +1,109 @@
+object ListForm: TListForm
+  Left = 621
+  Height = 429
+  Top = 23
+  Width = 418
+  Caption = 'ListForm'
+  ClientHeight = 429
+  ClientWidth = 418
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.1'
+  object FileSaveButton: TButton
+    Left = 160
+    Height = 25
+    Top = 31
+    Width = 100
+    Caption = 'Сохранить файл'
+    OnClick = FileSaveButtonClick
+    TabOrder = 0
+  end
+  object FileMemo: TMemo
+    Left = 40
+    Height = 66
+    Top = 344
+    Width = 338
+    TabOrder = 1
+  end
+  object FileOpenButton: TButton
+    Left = 276
+    Height = 25
+    Top = 31
+    Width = 102
+    Caption = 'Открыть файл'
+    OnClick = FileOpenButtonClick
+    TabOrder = 2
+  end
+  object ListBox1: TListBox
+    Left = 40
+    Height = 238
+    Top = 96
+    Width = 100
+    ItemHeight = 0
+    TabOrder = 3
+  end
+  object ListBox2: TListBox
+    Left = 160
+    Height = 238
+    Top = 96
+    Width = 100
+    ItemHeight = 0
+    TabOrder = 4
+  end
+  object ListBox3: TListBox
+    Left = 280
+    Height = 238
+    Top = 96
+    Width = 100
+    ItemHeight = 0
+    TabOrder = 5
+  end
+  object Lin: TButton
+    Left = 40
+    Height = 23
+    Top = 64
+    Width = 100
+    Caption = 'Линейный'
+    OnClick = LinClick
+    TabOrder = 6
+  end
+  object Upor: TButton
+    Left = 160
+    Height = 23
+    Top = 64
+    Width = 100
+    Caption = 'Упорядоченный'
+    OnClick = UporClick
+    TabOrder = 7
+  end
+  object Sliy: TButton
+    Left = 280
+    Height = 23
+    Top = 64
+    Width = 98
+    Caption = 'Слияние'
+    OnClick = SliyClick
+    TabOrder = 8
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 23
+    Top = 31
+    Width = 100
+    TabOrder = 9
+    Text = '0'
+  end
+  object Label1: TLabel
+    Left = -632
+    Height = 15
+    Top = -104
+    Width = 101
+    Caption = 'Кол-во элементов'
+  end
+  object FileSaveDIalog: TSaveDialog
+    DefaultExt = '.txt'
+    Left = 192
+  end
+  object FileOpenDialog: TOpenDialog
+    Left = 312
+  end
+end
