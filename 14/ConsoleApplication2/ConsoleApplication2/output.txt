@@ -1,0 +1,4 @@
+Number of family trees: 2
+
+Family tree: 8 0 10 2 3 4 9 1 5 
+Family tree: 6 11 12 7 

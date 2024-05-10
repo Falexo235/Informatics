@@ -1,0 +1,5 @@
+﻿  Source.cpp
+E:\lab_13_02\WindowsProject1\WindowsProject1\Source.cpp(139,18): warning C4018: <: несоответствие типов со знаком и без знака
+  WindowsProject1.cpp
+  Создание кода...
+LINK : fatal error LNK1104: не удается открыть файл "libboost_iostreams-vc142-mt-gd-x32-1_85.lib"

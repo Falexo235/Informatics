@@ -1,0 +1,5 @@
+﻿  ConsoleApplication11.cpp
+D:\лабар\lab_11\ConsoleApplication11\ConsoleApplication11\ConsoleApplication11.cpp(23,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\лабар\lab_11\ConsoleApplication11\ConsoleApplication11\ConsoleApplication11.cpp(29,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\лабар\lab_11\ConsoleApplication11\ConsoleApplication11\ConsoleApplication11.cpp(67,23): warning C4018: <: несоответствие типов со знаком и без знака
+  ConsoleApplication11.vcxproj -> D:\лабар\lab_11\ConsoleApplication11\Debug\ConsoleApplication11.exe
